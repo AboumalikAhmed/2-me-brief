@@ -1,0 +1,212 @@
+
+@font-face {
+    font-family:ProximaNova ;
+    src: url("../font/ProximaNova-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ProximaNova;
+}
+
+
+:root{
+
+}
+
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+
+}
+
+
+a{
+    transition: all .3s linear;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+li{
+    list-style: none;
+
+
+}
+
+
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+
+
+input{
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.container{
+    width: 1320px; 
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  
+}
+
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+
+}
+
+.logo{
+    width: 600px;
+    padding: 5px 0 5px 20px;
+    
+    
+}
+
+
+.logo img{
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 800px;
+}
+
+
+.nav_bar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.nav_bar ul li {
+    width: 100px;
+}
+
+.nav_bar ul li a{
+    text-transform: capitalize;
+    color: aliceblue;
+    display: block;
+    padding: 10px ;
+}
+
+.nav_bar .contact{
+   
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.nav_bar .contact button:not(:last-child){
+    border: currentColor 1px solid ;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.contact button:last-child{
+    padding: 10px;
+   
+}
+
+.contact .menu{
+   font-size: 20px;
+   /* display: none; */
+}
+ 
+
+
+
+
+
+@media screen and (max-width : 600px) {
+
+  /* .nav_bar{
+    width: 100%;
+    background-color: red;
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   display: block;
+
+  } */
+
+
+  ul{
+    display: none;
+  }
+/* 
+  .nav_bar ul{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+
+  .contact{
+    display: none;
+    background-color: aqua
+    ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact button:not(:last-child){
+
+    background-color: rgb(84, 107, 107);
+    
+    
+  }
+ */
+
+
+
+
+  .contact .menu{
+    display: block;
+  }
+
+}
